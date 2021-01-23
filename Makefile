@@ -26,6 +26,4 @@ bs-babel : types_and_constants.o derived_constants.o sgsym.o commod.o
 	$(F90) -o $@ types_and_constants.o sgsym.o commod.o $@.f90 $(lapack) 
 
 clean:
-	- rm fm-forces *.mod types_and_constants.o derived_constants.o sgsym.o commod.o
-	- rm -rf tbEIGENVAL arm-chair simple eigenmode-*.axsf ampl-eigenmode-*.dat  vc-eigenmode-*-movie.axsf movie.axsf unformatted-phonon-dos.dat
-
+	- rm bs-babel *.mod types_and_constants.o derived_constants.o sgsym.o commod.o
